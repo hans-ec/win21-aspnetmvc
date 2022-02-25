@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "SEqKTGaZtika39DnnoUZvRDLFvZkv6sxBv5ffaox3Xg=",
+  "Source": "02_Modified_AspNetMvc",
+  "BasePath": "_content/02_Modified_AspNetMvc",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "02_Modified_AspNetMvc\\wwwroot",
+      "Source": "02_Modified_AspNetMvc",
+      "ContentRoot": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\WIN21\\win21-aspnetmvc\\lektion-1\\02_Modified_AspNetMvc\\wwwroot\\",
+      "BasePath": "_content/02_Modified_AspNetMvc",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\WIN21\\win21-aspnetmvc\\lektion-1\\02_Modified_AspNetMvc\\wwwroot\\css\\site.css",
+      "SourceId": "02_Modified_AspNetMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\WIN21\\win21-aspnetmvc\\lektion-1\\02_Modified_AspNetMvc\\wwwroot\\",
+      "BasePath": "_content/02_Modified_AspNetMvc",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\WIN21\\win21-aspnetmvc\\lektion-1\\02_Modified_AspNetMvc\\wwwroot\\favicon.ico",
+      "SourceId": "02_Modified_AspNetMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\WIN21\\win21-aspnetmvc\\lektion-1\\02_Modified_AspNetMvc\\wwwroot\\",
+      "BasePath": "_content/02_Modified_AspNetMvc",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\WIN21\\win21-aspnetmvc\\lektion-1\\02_Modified_AspNetMvc\\wwwroot\\js\\site.js",
+      "SourceId": "02_Modified_AspNetMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\WIN21\\win21-aspnetmvc\\lektion-1\\02_Modified_AspNetMvc\\wwwroot\\",
+      "BasePath": "_content/02_Modified_AspNetMvc",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
+}

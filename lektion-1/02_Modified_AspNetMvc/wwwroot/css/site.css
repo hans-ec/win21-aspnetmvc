@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto&display=swap');
+
+/* 
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+
+.bg-darkblue {
+    background-color: #002249;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+    .title h1 {
+        font-size: 1.1em;
+    }
+
+    .title h5 {
+        font-size: 0.5em;
+        font-weight: 300;
+    }
+
+.card img {
+    max-width: 70%;
+}
+
+.card .card-title {
+    font-size: 0.9em;
+}
+
+.card .card-subtitle {
+    font-size: 1em;
+}
+
+.card .card-ul {
+    font-size: 0.7em;
+}

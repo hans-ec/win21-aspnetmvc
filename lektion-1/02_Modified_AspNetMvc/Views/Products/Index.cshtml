@@ -1,0 +1,60 @@
+﻿@model IEnumerable<_02_Modified_AspNetMvc.Models.Entities.ProductEntity>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<partial name="_PageTitle" />
+
+<div class="container my-5">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+        @foreach(var product in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <div class="d-flex justify-content-center m-4">
+                    <img src="@product.ImageUrl" class="card-img-top" alt="...">
+                </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-muted">@product.Name</h5>
+                        <h6 class="card-subtitle">@product.ShortDescription</h6>
+                        <p class="card-text">
+                            @Html.Raw(product.LongDescription)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
+
+@*
+    fetch('https://localhost:7071/api/products')
+    .then(res => res.json())
+    .then(data => {
+        
+        for(let product of data) {
+            document.getElementById('products').innerHTML += 
+                `  
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <div class="d-flex justify-content-center m-4">
+                        <img src="${product.imageUrl}" class="card-img-top" alt="...">
+                    </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-muted">${product.name}</h5>
+                            <h6 class="card-subtitle">${product.shortDescription}</h6>
+                            <p class="card-text">
+                                ${product.longDescription}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                `
+        }
+        
+    })
+*@
