@@ -258,3 +258,4 @@ C:\Users\HansMattin-Lassei\Documents\Utbildning\WIN21\win21-aspnetmvc\lektion-1\
 C:\Users\HansMattin-Lassei\Documents\Utbildning\WIN21\win21-aspnetmvc\lektion-1\02_Modified_AspNetMvc\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\HansMattin-Lassei\Documents\Utbildning\WIN21\win21-aspnetmvc\lektion-1\02_Modified_AspNetMvc\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\HansMattin-Lassei\Documents\Utbildning\WIN21\win21-aspnetmvc\lektion-1\02_Modified_AspNetMvc\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\HansMattin-Lassei\Documents\Utbildning\WIN21\win21-aspnetmvc\lektion-1\02_Modified_AspNetMvc\obj\Debug\net6.0\02_Modified_AspNetMvc.csproj.AssemblyReference.cache

@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Poppins:wght@100;400;700&family=Roboto:wght@400;700&display=swap");
+
+body {
+    font-family: "Karla", sans-serif;
+    color: #002249;
+}
+
+a {
+    color: #6c90b9;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #002249;
+    }
+
+.btn {
+    border-radius: 0;
+    padding: 1rem 2.55rem;
+}
+
+.btn-main {
+    color: #ffffff;
+    background-color: #006de8;
+    border-color: #006de8;
+}
+
+    .btn-main:hover {
+        color: #ffffff;
+        background-color: #0052af;
+    }
+
+.container {
+    padding: 0;
+}
+
+.bg-blue-gradient {
+    background: white;
+    background: radial-gradient(circle, white 5%, #a9c7ec 100%);
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "branding" "mainmenu";
+}
+
+#branding {
+    grid-area: branding;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 25px;
+}
+
+    #branding h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    #branding p {
+        font-family: "Karla", sans-serif;
+        font-size: 15px;
+        color: #6c90b9;
+        line-height: 0.5;
+    }
+
+#top-menu {
+    display: none;
+    grid-area: topmenu;
+    border-bottom: 1px solid #a9c7ec;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    margin-left: 100px;
+}
+
+    #top-menu .social a {
+        margin-left: 1rem;
+    }
+
+#main-menu {
+    grid-area: mainmenu;
+    padding-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+    #main-menu .menu-items {
+        margin-right: 2rem;
+    }
+
+        #main-menu .menu-items a {
+            margin-left: 4rem;
+        }
+
+.border {
+    border-color: black !important;
+}
+
+@media (min-width: 992px) {
+    .header-grid {
+        display: grid;
+        grid-template-columns: 274px auto;
+        grid-template-areas: "branding topmenu" "branding mainmenu";
+    }
+
+    #top-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+#showcase {
+    display: flex;
+}
+
+    #showcase .column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #showcase .column .content p {
+            font-size: 24px;
+            color: #69a1bb;
+        }
+
+        #showcase .column .content h1 {
+            font-size: 80px;
+            color: #002249;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #showcase .column .content .items {
+            display: flex;
+        }
+
+            #showcase .column .content .items .item {
+                display: flex;
+                align-items: center;
+            }
+
+                #showcase .column .content .items .item:first-child {
+                    margin-right: 6rem;
+                    margin-left: -1.5rem;
+                }
+
+                #showcase .column .content .items .item span {
+                    margin-top: -1rem;
+                    font-size: 24px;
+                }
+
+        #showcase .column .showcase-image {
+            margin-right: -5rem;
+        }
+
+#page-title {
+    display: flex;
+    justify-content: center;
+}
+
+    #page-title .content {
+        margin: 135px 0;
+        text-align: center;
+    }
+
+        #page-title .content h1 {
+            font-size: 80px;
+            color: #002249;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #page-title .content .breadcrumb {
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            color: #69a1bb;
+        }
+
+            #page-title .content .breadcrumb a {
+                margin: 0 1rem;
+            }
+/*# sourceMappingURL=site.css.map */

@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Poppins:wght@100;400;700&family=Roboto:wght@400;700&display=swap');
+
+// font-family
+$karla-font: 'Karla', sans-serif;
+$motserrat-font: 'Montserrat', sans-serif;
+$roboto-font: 'Roboto', sans-serif;
+
+
+// colors
+$main-color: #6c90b9;
+$main-turquoise-color:#69a1bb;
+$secondary-color: #a9c7ec;
+$secondary-bluegray-color: #a0b6d0;
+$dark-color: #002249;
+$light-color: #f5faff;
+$white-color: #ffffff;
+$blue-color: #006de8;
+$blue-dark-color: #0052af;
+
+
+
+body {
+    font-family: $karla-font;
+    color: $dark-color;
+}
+
+
+a {
+    color: $main-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $dark-color;
+    }
+}
+
+.btn {
+    border-radius: 0;
+    padding: 1rem 2.55rem;
+}
+
+.btn-main {
+    color: $white-color;
+    background-color: $blue-color;
+    border-color: $blue-color;
+
+    &:hover {
+        color: $white-color;
+        background-color: $blue-dark-color;
+    }
+}
+
+.container {
+    padding: 0;
+}
+
+
+
+
+.bg-blue-gradient {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 5%, rgba(169,199,236,1) 100%);
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:    "branding"
+                            "mainmenu";
+}
+
+#branding {
+    grid-area: branding;
+    background-color: $white-color;
+    text-align: center;
+    padding-top: 25px;
+
+    h1 {
+        font-family: $motserrat-font;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    p {
+        font-family: $karla-font;
+        font-size: 15px;
+        color: $main-color;
+        line-height: 0.5;
+    }
+}
+
+#top-menu {
+    display: none;
+    grid-area: topmenu;
+    border-bottom: 1px solid $secondary-color;  
+    padding-top: 18px;
+    padding-bottom: 12px;
+    margin-left: 100px;
+
+    .social {
+        a {
+            margin-left: 1rem;
+        }
+    }
+}
+
+#main-menu {
+    grid-area: mainmenu;
+    padding-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .menu-items {
+        margin-right: 2rem;
+
+        a {
+            margin-left: 4rem;
+        }
+    }
+}
+
+.border {
+    border-color: black !important;
+}
+
+
+// header
+@media (min-width: 992px) {
+    .header-grid {
+        display: grid;
+        grid-template-columns: 274px auto;
+        grid-template-areas:    "branding topmenu"
+                                "branding mainmenu";
+    }
+
+    #top-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+// showcase
+
+#showcase {
+    display: flex;
+
+    .column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .content {
+            p {
+                font-size: 24px;
+                color: $main-turquoise-color;
+            }
+
+            h1 {
+                font-size: 80px;
+                color: $dark-color;
+                font-family: $roboto-font;
+            }
+
+            .items {
+                display: flex;
+
+
+
+                .item {
+                    display: flex;
+                    align-items: center;
+
+                    &:first-child {
+                        margin-right: 6rem;
+                        margin-left: -1.5rem;
+                    }
+
+                    span {
+                        margin-top: -1rem;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+
+        .showcase-image {
+            margin-right: -5rem;
+        }
+    }
+}
+
+// Page Title
+#page-title {
+    display: flex;
+    justify-content: center;
+
+    .content {
+        margin: 135px 0;
+        text-align: center;
+
+        h1 {
+            font-size: 80px;
+            color: $dark-color;
+            font-family: $roboto-font;
+        }
+
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            color: $main-turquoise-color;
+
+            a {
+                margin: 0 1rem;
+            }
+        }
+    }
+}
