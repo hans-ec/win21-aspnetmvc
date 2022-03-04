@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "3RM/mTs6fN+pfY7SNusXikU59PiDazO8OHSPupDedpDSW5Jji1pOSqxklBNsHXpvFKBBIuHCuM0s+TRfJk4ypw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\WIN21\\win21-aspnetmvc\\lektion-3\\01_Identity_Windows\\01_Identity_Windows.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\6.0.2\\microsoft.aspnetcore.authentication.negotiate.6.0.2.nupkg.sha512",
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.2\\microsoft.aspnetcore.connections.abstractions.6.0.2.nupkg.sha512",
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\microsoft.extensions.features\\6.0.2\\microsoft.extensions.features.6.0.2.nupkg.sha512",
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\system.directoryservices.protocols\\6.0.1\\system.directoryservices.protocols.6.0.1.nupkg.sha512",
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\system.io.pipelines\\6.0.2\\system.io.pipelines.6.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

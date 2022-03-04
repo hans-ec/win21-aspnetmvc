@@ -1,0 +1,8 @@
+﻿@using _02_Identity_Custom
+@using _02_Identity_Custom.Models
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

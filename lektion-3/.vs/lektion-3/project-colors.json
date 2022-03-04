@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fe438589-8ded-4af8-b5b3-95a54a3b3624": {
+      "ProjectGuid": "fe438589-8ded-4af8-b5b3-95a54a3b3624",
+      "DisplayName": "Repetition",
+      "ColorIndex": 0
+    },
+    "af55c054-cedb-4564-9932-77ca93bdcc37": {
+      "ProjectGuid": "af55c054-cedb-4564-9932-77ca93bdcc37",
+      "DisplayName": "01_Identity_Windows",
+      "ColorIndex": 1
+    },
+    "ee0ff10c-e148-4cff-b858-e4cd5bd8aad9": {
+      "ProjectGuid": "ee0ff10c-e148-4cff-b858-e4cd5bd8aad9",
+      "DisplayName": "01_Identity_Individual",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "ddd76235-ecce-4f6f-a76f-a93459604d67": {
+      "ProjectGuid": "ddd76235-ecce-4f6f-a76f-a93459604d67",
+      "DisplayName": "02_Identity_Custom",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

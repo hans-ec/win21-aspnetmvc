@@ -1,0 +1,79 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Registrera konto";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row mt-5">
+    <div class="col-md-6">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="row mb-3">
+                <div class="col-6">
+                    <div class="form-floating mb-3">
+                        <input asp-for="Input.FirstName" class="form-control shadow-sm" placeholder="Förnamn" autocomplete="firstname" aria-required="true" />
+                        <label asp-for="Input.FirstName"></label>
+                        <small><span asp-validation-for="Input.FirstName" class="text-danger"></span></small>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-floating mb-3">
+                        <input asp-for="Input.LastName" class="form-control shadow-sm" placeholder="Efternamn" autocomplete="lastname" aria-required="true" />
+                        <label asp-for="Input.LastName"></label>
+                        <small><span asp-validation-for="Input.LastName" class="text-danger"></span></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-floating mb-5">
+                <input asp-for="Input.Email" class="form-control shadow-sm" placeholder="E-postadress" autocomplete="email" aria-required="true" />
+                <label asp-for="Input.Email"></label>
+                <small><span asp-validation-for="Input.Email" class="text-danger"></span></small>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Input.AddressLine" class="form-control shadow-sm" placeholder="Postadress" autocomplete="addressline" aria-required="true" />
+                <label asp-for="Input.AddressLine"></label>
+                <small><span asp-validation-for="Input.AddressLine" class="text-danger"></span></small>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-4">
+                    <div class="form-floating">
+                        <input asp-for="Input.PostalCode" class="form-control shadow-sm" placeholder="Postnummer" autocomplete="postalcode" aria-required="true" />
+                        <label asp-for="Input.PostalCode"></label>
+                        <small><span asp-validation-for="Input.PostalCode" class="text-danger"></span></small>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="form-floating">
+                        <input asp-for="Input.City" class="form-control shadow-sm" placeholder="Ort" autocomplete="city" aria-required="true" />
+                        <label asp-for="Input.City"></label>
+                        <small><span asp-validation-for="Input.City" class="text-danger"></span></small>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Password" class="form-control shadow-sm" placeholder="Lösenord" autocomplete="new-password" aria-required="true" />
+                <label asp-for="Input.Password"></label>
+                <small><span asp-validation-for="Input.Password" class="text-danger"></span></small>
+            </div>
+
+            <div class="form-floating mb-5">
+                <input asp-for="Input.ConfirmPassword" class="form-control shadow-sm" placeholder="Bekräfta lösenord" autocomplete="new-password" aria-required="true" />
+                <label asp-for="Input.ConfirmPassword"></label>
+                <small><span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span></small>
+            </div>
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-secondary mb-5 shadow">Registrera</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

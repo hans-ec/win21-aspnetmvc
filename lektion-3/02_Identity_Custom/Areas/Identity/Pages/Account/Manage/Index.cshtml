@@ -1,0 +1,67 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Profile";
+    ViewData["ActivePage"] = ManageNavPages.Index;
+}
+
+<h3>@ViewData["Title"]</h3>
+<partial name="_StatusMessage" for="StatusMessage" />
+<div class="row">
+    <div class="col-md-6">
+        <form id="profile-form" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="row mb-3">
+                <div class="col-6">
+                    <div class="form-floating mb-3">
+                        <input asp-for="Input.FirstName" class="form-control shadow-sm" placeholder="Förnamn" autocomplete="firstname" aria-required="true" />
+                        <label asp-for="Input.FirstName"></label>
+                        <small><span asp-validation-for="Input.FirstName" class="text-danger"></span></small>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-floating mb-3">
+                        <input asp-for="Input.LastName" class="form-control shadow-sm" placeholder="Efternamn" autocomplete="lastname" aria-required="true" />
+                        <label asp-for="Input.LastName"></label>
+                        <small><span asp-validation-for="Input.LastName" class="text-danger"></span></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-floating mb-5">
+                <input asp-for="Input.PhoneNumber" class="form-control shadow-sm" placeholder="Telefonnummer" autocomplete="phone" aria-required="true" />
+                <label asp-for="Input.PhoneNumber"></label>
+                <small><span asp-validation-for="Input.PhoneNumber" class="text-danger"></span></small>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Input.AddressLine" class="form-control shadow-sm" placeholder="Postadress" autocomplete="addressline" aria-required="true" />
+                <label asp-for="Input.AddressLine"></label>
+                <small><span asp-validation-for="Input.AddressLine" class="text-danger"></span></small>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-4">
+                    <div class="form-floating">
+                        <input asp-for="Input.PostalCode" class="form-control shadow-sm" placeholder="Postnummer" autocomplete="postalcode" aria-required="true" />
+                        <label asp-for="Input.PostalCode"></label>
+                        <small><span asp-validation-for="Input.PostalCode" class="text-danger"></span></small>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="form-floating">
+                        <input asp-for="Input.City" class="form-control shadow-sm" placeholder="Ort" autocomplete="city" aria-required="true" />
+                        <label asp-for="Input.City"></label>
+                        <small><span asp-validation-for="Input.City" class="text-danger"></span></small>
+                    </div>
+                </div>
+            </div>
+            <button id="update-profile-button" type="submit" class="w-100 btn btn-lg btn-secondary mb-5 shadow">Spara</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
