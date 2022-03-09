@@ -1,0 +1,56 @@
+﻿@model SignUpModel
+
+@{
+    ViewData["Title"] = "Bli medlem";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container">
+        <div id="signup">
+            <div class="title">
+                <h1>@ViewData["Title"]</h1>
+                <p>Är du  redan medlem: <a asp-action="SignIn">Logga in här</a></p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <form asp-action="SignUp" asp-route-returnUrl="@Model.ReturnUrl" class="col-8">
+                    <div class="row g-3">
+                        <div class="col-6 mb-3">
+                            <input asp-for="FirstName" type="text" class="form-control" placeholder="Ange förnamn">
+                            <span asp-validation-for="FirstName" class="error"></span>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <input asp-for="LastName" type="text" class="form-control" placeholder="Ange efternamn">
+                            <span asp-validation-for="LastName" class="error"></span>
+                        </div>
+                        <div class="col-12 mb-5">
+                            <input asp-for="Email" type="text" class="form-control" placeholder="Ange e-postadress">
+                            <span asp-validation-for="Email" class="error"></span>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-6">
+                                <input asp-for="Password" type="password" class="form-control" placeholder="Ange lösenord">
+                                <span asp-validation-for="Password" class="error"></span>
+                            </div>
+                            <div class="col-6">
+                                <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Bekräfta lösenord">
+                                <span asp-validation-for="ConfirmPassword" class="error"></span>
+                            </div>
+                        </div>
+                       
+                        <div asp-validation-summary="ModelOnly" class="error"></div>
+
+                        <button type="submit" class="btn btn-main">@ViewData["Title"]</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

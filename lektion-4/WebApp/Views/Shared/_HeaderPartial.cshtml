@@ -1,0 +1,45 @@
+﻿
+<header>
+    <div class="container">
+        <div class="header-grid">
+            <div id="branding">
+                <h1>OmniVus.</h1>
+                <p>IT Service & Teknologi</p>
+            </div>
+            <nav id="topmenu">
+                <p>support@domain.com</p>
+                @if(SignInManager.IsSignedIn(User))
+                {
+                    <div class="social">
+                        <a href="#">@User.Identity?.Name</a>
+                    </div>                    
+                }
+                else
+                {
+                    <div class="social">
+                        <a href="https://facebook.com">facebook</a>
+                        <a href="https://twitter.com">twitter</a>
+                        <a href="https://linkedin.com">linkedin</a>
+                    </div>
+                }
+            </nav>
+            <nav id="mainmenu">
+                <div class="menu-items">
+                    <a asp-controller="Default" asp-action="Index">Hem</a>
+                    <a asp-controller="Services" asp-action="Index">Tjänster</a>
+                    <a asp-controller="Contacts" asp-action="Index">Kontakta</a>
+                </div>
+                
+                @if(SignInManager.IsSignedIn(User))
+                {
+                    <a asp-controller="Authentication" asp-action="SignOut" class="btn btn-main">Logga ut</a>
+                }
+                else
+                {
+                   <a asp-controller="Authentication" asp-action="SignIn" class="btn btn-main">Logga in</a> 
+                }
+                
+            </nav>
+        </div>
+    </div>
+</header>
