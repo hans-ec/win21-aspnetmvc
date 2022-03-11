@@ -1,0 +1,19 @@
+﻿@model WebApp_Identity_Roles_Policies_Claims.Models.ViewModels.ProfileViewModel
+
+@{
+    ViewData["Title"] = @User.FindFirst("DisplayName").Value;
+}
+
+<h1 class="display-4">@User.FindFirst("DisplayName").Value</h1>
+
+<div>
+    <h4>Addressinformation</h4>
+    <hr />
+    <div>
+        @Model.Address.Address.AddressLine
+    </div>
+    <div>
+        @Model.Address.Address.PostalCode, @Model.Address.Address.City
+    </div>
+</div>
+

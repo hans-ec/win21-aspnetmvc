@@ -1,0 +1,10 @@
+﻿@using WebApp_Identity_Roles_Policies_Claims
+@using WebApp_Identity_Roles_Policies_Claims.Models
+@using Microsoft.AspNetCore.Identity
+@using WebApp_Identity_Roles_Policies_Claims.Data
+
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
