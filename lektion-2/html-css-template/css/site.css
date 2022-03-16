@@ -36,53 +36,56 @@ a:hover {
   background: radial-gradient(circle, white 5%, #a9c7ec 100%);
 }
 
-.header-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "branding" "mainmenu";
+.bg-top-placement {
+  margin-top: -140px;
+  padding-top: 150px;
 }
 
-#branding {
+#header-grid {
+  display: grid;
+  grid-template-columns: 274px auto;
+  grid-template-areas: "branding topmenu" "branding mainmenu";
+}
+#header-grid .branding {
   grid-area: branding;
   background-color: #ffffff;
   text-align: center;
   padding-top: 25px;
 }
-#branding h1 {
+#header-grid .branding h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 40px;
 }
-#branding p {
+#header-grid .branding p {
   font-family: "Karla", sans-serif;
   font-size: 15px;
   color: #6c90b9;
   line-height: 0.5;
 }
-
-#top-menu {
-  display: none;
+#header-grid .top-menu {
+  display: flex;
+  justify-content: space-between;
   grid-area: topmenu;
   border-bottom: 1px solid #a9c7ec;
   padding-top: 18px;
   padding-bottom: 12px;
   margin-left: 100px;
 }
-#top-menu .social a {
+#header-grid .top-menu .social a {
   margin-left: 1rem;
 }
-
-#main-menu {
+#header-grid .main-menu {
   grid-area: mainmenu;
   padding-top: 20px;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-#main-menu .menu-items {
+#header-grid .main-menu .menu-items {
   margin-right: 2rem;
 }
-#main-menu .menu-items a {
+#header-grid .main-menu .menu-items a {
   margin-left: 4rem;
 }
 
@@ -90,18 +93,6 @@ a:hover {
   border-color: black !important;
 }
 
-@media (min-width: 992px) {
-  .header-grid {
-    display: grid;
-    grid-template-columns: 274px auto;
-    grid-template-areas: "branding topmenu" "branding mainmenu";
-  }
-
-  #top-menu {
-    display: flex;
-    justify-content: space-between;
-  }
-}
 #showcase {
   display: flex;
 }
