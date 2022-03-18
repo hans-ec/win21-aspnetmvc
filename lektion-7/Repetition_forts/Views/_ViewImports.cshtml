@@ -1,0 +1,11 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Repetition_forts
+@using Repetition_forts.Models
+@using Repetition_forts.Services
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@inject IProfileManager ProfileManager
+
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
