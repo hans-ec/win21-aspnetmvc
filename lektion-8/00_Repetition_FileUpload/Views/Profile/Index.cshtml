@@ -1,0 +1,16 @@
+﻿@model _00_Repetition_FileUpload.Models.ViewModels.ProfileViewModel
+
+@{
+    ViewData["Title"] = Model.Profile.DisplayName;
+}
+
+<div class="card" style="width: 18rem;">
+    <img src="@("~/profileImages/"+Model.ProfileImage.FileName)" asp-append-version="true" height="150" width="150" style="border-radius: 50%" />
+    <div class="card-body text-center">
+        <h5 class="card-title">@Model.Profile.DisplayName</h5>
+        <p class="card-text">@Model.Profile.Email</p>
+
+        <a asp-controller="Profile" asp-action="Edit" asp-route-id="@Model.Profile.UserId">Redigera</a>
+    </div>
+</div>
+
